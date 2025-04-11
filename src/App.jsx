@@ -1,16 +1,12 @@
-// src/App.jsx
 import React from "react";
-import AnalyzerPage from "./pages/AnalyzerPage";
-import { AppProvider } from "./context/AppContext";
+import TextAnalyzer from "./TextAnalyzer";
 
-const App = () => {
+function App() {
   return (
-    <AppProvider>
-      <div className="min-h-screen bg-gray-100">
-        <AnalyzerPage />
-      </div>
-    </AppProvider>
+    <main className="p-6 min-h-screen bg-white">
+      <TextAnalyzer />
+    </main>
   );
-};
+}
 
 export default App;
